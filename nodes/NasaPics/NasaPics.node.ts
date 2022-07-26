@@ -72,7 +72,7 @@ export class NasaPics implements INodeType {
 						},
 					},
 				],
-				default: 'get'
+				default: 'get',
 			},
 			{
 				displayName: 'Operation',
@@ -100,7 +100,7 @@ export class NasaPics implements INodeType {
 						},
 					},
 				],
-				default: 'get'
+				default: 'get',
 			},
 			{
 				displayName: 'Rover name',
@@ -178,7 +178,7 @@ export class NasaPics implements INodeType {
 						},
 					},
 				],
-			}
-		]
+			},
+		],
 	};
 }

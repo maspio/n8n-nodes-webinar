@@ -22,9 +22,8 @@ export class NasaPicsApi implements ICredentialType {
 			type: 'generic',
 			properties: {
 					qs: {
-							'api_key': '={{$credentials.apiKey}}'
-					}
-
+							'api_key': '={{$credentials.apiKey}}',
+					},
 			},
 	} as IAuthenticateGeneric;
 }
