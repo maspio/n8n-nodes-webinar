@@ -17,6 +17,24 @@ All nodes are npm packages. To make your custom node available to the community,
 6. Run `npm run lint` to check for errors or `npm run lintfix` to automatically fix errors when possible.
 7. Publish your package to npm. More information on the links below.
 
+## Docker
+
+### Build
+
+```bash
+docker build -t n8n-webinar .
+```
+
+### Run
+
+```bash
+# run on linux
+docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n n8n-webinar
+
+# run on windows
+docker run -it --rm --name n8n -p 5678:5678 -v $HOME/.n8n:/home/node/.n8n n8n-webinar
+```
+
 ## License
 
 [MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
