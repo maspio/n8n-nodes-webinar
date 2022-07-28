@@ -22,7 +22,7 @@ All nodes are npm packages. To make your custom node available to the community,
 ### Build
 
 ```bash
-docker build -t n8n-webinar .
+docker build --build-arg N8N_VERSION=<VERSION> -t n8n-webinar .
 ```
 
 ### Run
